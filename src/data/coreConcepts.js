@@ -1,24 +1,37 @@
+import componentsImg from '../assets/components.png';
+import propsImg from '../assets/config.png';
+import jsxImg from '../assets/jsx-ui.png';
+import stateImg from '../assets/state-mgmt.png';
+
 const coreConcepts = [
-	{
-		image: "/girl1.png",		
-		title: "React",		
-		description: "React é uma biblioteca JavaScript poderosa e flexível, ideal para a construção de interfaces de usuário dinâmicas e eficientes"
-	},
-	{
-		image: "/girl2.png",		
-		title: "Laravel",		
-		description: "Laravel é um poderoso e amigável framework PHP que oferece uma experiência de desenvolvimento elegante, facilitando a criação de aplicativos web robustos e eficientes."
-	},
-	{
-		image: "/girl3.jpg",		
-		title: "Django",		
-		description: "Django é um framework de desenvolvimento web em Python que prioriza a produtividade, oferecendo uma estrutura sólida e completa para a criação de aplicativos web poderosos e escaláveis."
-	},
-	{
-		image: "/girl4.jpg",		
-		title: "Bootstrap",		
-		description: "Bootstrap é um framework front-end poderoso, oferecendo uma coleção abrangente de ferramentas e estilos pré-criados, facilitando a criação de interfaces web responsivas e visualmente atrativas."
-	}
-]
+  {
+    id: 0,
+    image: componentsImg,
+    title: 'Components',
+    description:
+      'The core UI building block - compose the user interface by combining multiple components.',
+  },
+  {
+    id: 1,
+    image: jsxImg,
+    title: 'JSX',
+    description:
+      'Return (potentially dynamic) HTML(ish) code to define the actual markup that will be rendered.',
+  },
+  {
+    id: 2,
+    image: propsImg,
+    title: 'Props',
+    description:
+      'Make components configurable (and therefore reusable) by passing input data to them.',
+  },
+  {
+    id: 3,
+    image: stateImg,
+    title: 'State',
+    description:
+      'React-managed data which, when changed, causes the component to re-render & the UI to update.',
+  },
+];
 
 export default coreConcepts
