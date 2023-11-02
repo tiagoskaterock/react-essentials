@@ -1,7 +1,8 @@
 import logo from "../assets/react-core-concepts.png"
+import frases from "../data/frases.js"
 
-function stringAleatoria() {  
-  const meuArray = ["Crucial", "Core", "Fundamental"]
+function fraseAleatoria() {  
+  const meuArray = frases
   return meuArray[Math.floor(Math.random() * meuArray.length)];
 }
 
@@ -11,8 +12,7 @@ function Header() {
       <img src={logo} alt="Stylized atom" />
       <h1>React Essentials</h1>
       <p>
-        {stringAleatoria()} React concepts you will need for almost any app you are
-        going to build!
+        {fraseAleatoria()}
       </p>
     </header>
 	)
