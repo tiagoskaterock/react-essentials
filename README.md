@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=react" alt="Dev icons" />
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React Essentials
 
-## Available Scripts
+This project is intended for studying and practicing essential React concepts.
 
-In the project directory, you can run:
+## Description
 
-### `npm start`
+`react-essentials` is a project created to explore the fundamentals of React and its basic functionalities. It serves as a solid foundation for beginners to learn and for revisiting crucial concepts for React development.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<!-- ## Preview
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=tailwind" alt="Dev icons" />
+</p> -->
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- **React Components**: Explore and create various React components to understand the structure and logic behind them.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<!-- - **Hooks**: Utilize hooks such as `useState`, `useEffect`, and others to manage state and effects in component lifecycle.
 
-### `npm run build`
+- **Routing**: Implement routes using `react-router` to create dynamic navigation in the application.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **State Management**: Understand and practice different state management methods, including Context API or state managers like Redux.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Styling**: Explore different styling methods such as plain CSS, CSS-in-JS, or libraries like Styled Components.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Testing**: Integrate unit or integration tests using Jest, React Testing Library, or other testing tools. -->
 
-### `npm run eject`
+## Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone this repository: `git clone https://github.com/tiagoskaterock/react-essentials.git`
+2. Navigate to the project directory: `cd react-essentials`
+3. Install dependencies: `npm install`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+To start the project, run:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+npm start
