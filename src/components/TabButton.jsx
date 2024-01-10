@@ -1,12 +1,8 @@
-function TabButton(props) {
-
-	function handleClick() {
-		alert(props.children)
-	}
+function TabButton(props) {	
 
 	return (
 		<li>
-			<button onClick={handleClick}> {props.children} </button>
+			<button onClick={props.onClick}> {props.children} </button>
 		</li>
 	)
 }
