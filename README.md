@@ -10,10 +10,10 @@ This project is intended for studying and practicing essential React concepts.
 
 `react-essentials` is a project created to explore the fundamentals of React and its basic functionalities. It serves as a solid foundation for beginners to learn and for revisiting crucial concepts for React development.
 
-<!-- ## Preview
+## Preview
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=tailwind" alt="Dev icons" />
-</p> -->
+  <img src="1.png" alt="Website" />
+</p>
 
 ## Features
 

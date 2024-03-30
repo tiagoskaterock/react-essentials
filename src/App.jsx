@@ -6,8 +6,9 @@ import { useState } from 'react'
 
 function App() {
 
-  function handleClick(props) {
-    alert('click')
+  function handleSelect(selectedButton) {
+    // selected button => 'components', 'jsx', 'props', 'state'
+    alert(selectedButton)
   }
 
   const [dynamic, setDynamic] = useState('Dynamic Content')
@@ -28,10 +29,10 @@ function App() {
           </h2>
 
           <menu>
-            <TabButton onClick={handleClick}>Components</TabButton>
-            <TabButton onClick={handleClick}>JSX</TabButton>
-            <TabButton onClick={handleClick}>Props</TabButton>
-            <TabButton onClick={handleClick}>State</TabButton>
+            <TabButton onClick={ () => handleSelect('components')}>Components</TabButton>
+            <TabButton onClick={ () => handleSelect('jsx')}>JSX</TabButton>
+            <TabButton onClick={ () => handleSelect('props')}>Props</TabButton>
+            <TabButton onClick={ () => handleSelect('state')}>State</TabButton>
           </menu>
 
           {dynamic}
