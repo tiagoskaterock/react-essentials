@@ -1,12 +1,15 @@
-import coreConcepts from "../data/coreConcepts"
-import CoreConcept from "./CoreConcept"
+import React from "react";
+import coreConcepts from "../data/coreConcepts.js";
+import CoreConcept from "./CoreConcept";
 
 function CoreConcepts() {
-	return (
-		<ul>
-      { coreConcepts.map( c => <CoreConcept {...coreConcepts[c.id]} key={c.id} /> ) }
+  return (
+    <ul>
+      {Object.values(coreConcepts).map((concept) => (
+        <CoreConcept {...concept} key={concept.id} />
+      ))}
     </ul>
-	)
+  );
 }
 
-export default CoreConcepts
+export default CoreConcepts;

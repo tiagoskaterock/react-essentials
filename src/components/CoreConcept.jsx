@@ -1,13 +1,14 @@
-function CoreConcept({ image, title, description }) {
+function CoreConcept(props) {
+  // console.log(props)
   return (
     <li>
       <img 
-        src={image} 
-        alt={title}
+        src={props.image} 
+        alt={props.title}
         width="200"
       />
-      <h3>{title}</h3>
-      <p>{description}</p>
+      <h3>{props.title}</h3>
+      <p>{props.description}</p>
     </li>
   )
 }

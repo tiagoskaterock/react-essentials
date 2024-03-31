@@ -3,17 +3,16 @@ import CoreConcepts from "./components/CoreConcepts"
 import TabButton from "./components/TabButton"
 import "./index.css"
 import { useState } from 'react'
+import coreConcepts from "./data/coreConcepts.js"
 
 function App() {
 
-  const [ selectedTopic, setSelectedTopic ] = useState('Please click a button');
+  const [ selectedTopic, setSelectedTopic ] = useState('components');  
 
   function handleSelect(selectedButton) {
     // selected button => 'components', 'jsx', 'props', 'state'
     setSelectedTopic(selectedButton)
   }
-
-  const [dynamic, setDynamic] = useState('Dynamic Content')
 
   return (
     <div>
@@ -37,7 +36,15 @@ function App() {
             <TabButton onClick={ () => handleSelect('state')}>State</TabButton>
           </menu>
 
-          {selectedTopic}
+          <div id="tab-content">
+            <h3>{ coreConcepts[selectedTopic].title }</h3>
+            <p>{ coreConcepts[selectedTopic].description }</p>
+            <pre>
+              <code>
+                { coreConcepts[selectedTopic].code }
+              </code>
+            </pre>
+          </div>
 
         </section>
 

@@ -13,6 +13,7 @@ This project is intended for studying and practicing essential React concepts.
 ## Preview
 <p align="center">
   <img src="1.png" alt="Website" />
+  <img src="2.png" alt="Website" />
 </p>
 
 ## Features
