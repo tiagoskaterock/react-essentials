@@ -7,10 +7,9 @@ import coreConcepts from "./data/coreConcepts.js"
 
 function App() {
 
-  const [ selectedTopic, setSelectedTopic ] = useState('components');  
+  const [ selectedTopic, setSelectedTopic ] = useState();  
 
   function handleSelect(selectedButton) {
-    // selected button => 'components', 'jsx', 'props', 'state'
     setSelectedTopic(selectedButton)
   }
 
@@ -37,13 +36,24 @@ function App() {
           </menu>
 
           <div id="tab-content">
-            <h3>{ coreConcepts[selectedTopic].title }</h3>
-            <p>{ coreConcepts[selectedTopic].description }</p>
-            <pre>
-              <code>
-                { coreConcepts[selectedTopic].code }
-              </code>
-            </pre>
+          
+            {/* no topic selected shows a statement to the user */}
+            { ! selectedTopic && <p>Select a topic</p> }
+
+            {/* topic selected shows the right content */}
+            { 
+              selectedTopic && 
+              <>
+                <h3>{ coreConcepts[selectedTopic].title }</h3>
+                <p>{ coreConcepts[selectedTopic].description }</p>
+                <pre>
+                  <code>
+                    { coreConcepts[selectedTopic].code }
+                  </code>
+                </pre> 
+              </> 
+            }
+                        
           </div>
 
         </section>
