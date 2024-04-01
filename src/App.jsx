@@ -1,5 +1,6 @@
 import Header from "./components/Header"
 import CoreConcepts from "./components/CoreConcepts"
+import TopicButtons from "./components/TopicButtons"
 import TabButton from "./components/TabButton"
 import "./index.css"
 import { useState } from 'react'
@@ -15,11 +16,16 @@ function App() {
 
   return (
     <div>
+
+      {/* React Rssentials title with phrases */}
       <Header />
+      
       <main>
 
+        {/* core concepts card */}
         <section id="core-concepts">
-          <h2>Core Concepts</h2>          
+          <h2>Core Concepts</h2>   
+          {/* core concepts loop */}
           <CoreConcepts />
         </section> 
 
@@ -28,32 +34,20 @@ function App() {
             Examples
           </h2>
 
+          {/* buttons about topics */}
           <menu>
-            <TabButton
-              isSelected={ selectedTopic === 'components' }
-              onClick={ () => handleSelect('components')}>
-              Components
-            </TabButton>
+            
+            {Object.values(coreConcepts).map((concept) => (
+              <TabButton
+                isSelected={ selectedTopic === concept.slug }
+                onClick={ () => handleSelect(concept.slug)}>
+                {concept.title}
+              </TabButton>
+            ))}
 
-            <TabButton
-              isSelected={ selectedTopic === 'jsx' }
-              onClick={ () => handleSelect('jsx')}>
-              JSX
-            </TabButton>
-
-            <TabButton
-              isSelected={ selectedTopic === 'props' }
-              onClick={ () => handleSelect('props')}>
-              Props
-            </TabButton>
-
-            <TabButton
-              isSelected={ selectedTopic === 'state' }
-              onClick={ () => handleSelect('state')}>
-              State
-            </TabButton>
           </menu>
 
+          {/* examples */}
           <div id="tab-content">
           
             {/* no topic selected shows a statement to the user */}
