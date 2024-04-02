@@ -4,11 +4,14 @@ import CoreConcept from "./CoreConcept";
 
 function CoreConcepts() {
   return (
-    <ul>
-      {Object.values(coreConcepts).map((concept) => (
-        <CoreConcept {...concept} key={concept.id} />
-      ))}
-    </ul>
+    <section id="core-concepts">
+      <h2>Core Concepts</h2> 
+      <ul>
+        {Object.values(coreConcepts).map((concept) => (
+          <CoreConcept {...concept} key={concept.id} />
+        ))}
+      </ul>
+    </section> 
   );
 }
 
