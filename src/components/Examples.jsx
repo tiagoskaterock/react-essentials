@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import TabButton from "./TabButton";
+import Section from "./Section";
 import coreConcepts from "../data/coreConcepts";
 // import coreConcepts from "./data/coreConcepts.js"
 
@@ -12,7 +13,7 @@ function Examples() {
   }
 
 	return (
-		<section id="examples">
+		<Section title="examples" id="examples">
       <h2>
         Examples
       </h2>
@@ -52,7 +53,7 @@ function Examples() {
                     
       </div>
 
-    </section>
+    </Section>
 	)
 }
 

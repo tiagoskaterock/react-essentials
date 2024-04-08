@@ -11,7 +11,7 @@ function CoreConcepts() {
           <CoreConcept {...concept} key={concept.id} />
         ))}
       </ul>
-    </section> 
+    </section>
   );
 }
 
