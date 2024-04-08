@@ -13,10 +13,7 @@ function Examples() {
   }
 
 	return (
-		<Section title="examples" id="examples">
-      <h2>
-        Examples
-      </h2>
+		<Section title="Examples" id="examples">
 
       {/* buttons about topics */}
       <menu>
